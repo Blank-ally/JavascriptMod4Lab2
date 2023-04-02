@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Ready Function</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+          
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>The Document Ready Function</h1>
+                    <p></p><a href="https://learn.jquery.com/using-jquery-core/document-ready/" target="_blank">Documentation</a></p>
+                    
+
+                    <div class="content content--full">
+                        <p>
+                            A page can't be manipulated safely until the document is "ready." jQuery detects this state of readiness for you. Code included inside $( document ).ready() will only run once the page Document Object Model (DOM) is ready for JavaScript code to execute.
+                        </p>
+    <pre><code>$( document ).ready(function() {
+        console.log( "ready!" );
+    });</pre></code>
+                        <p>You can use the shorthand $() for $( document ).ready().</p>
+    <pre><code>$(function() {
+        console.log( "ready!" );
+    });</pre></code>
+                        <p>Add the document.ready function to this page in the including-jquery.js file. You will need to add this to all of your js files using jQuery. Make sure to include a CDN link in this HTML file. If the jQuery library is not included, you will see that the jQuery object will not be defined.</p>
+                        
+                        <div class="img">
+                            <img src="/src/images/CommonError.PNG" alt="common error jquery undefined">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>  
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/jquery-set-up/document-ready.js"></script>
+</body>
+</html>

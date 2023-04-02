@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing A Node</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>The jQuery Function</h1>
+                    <p>
+                        <a href="https://api.jquery.com/jquery/" target="_blank">
+                            Documentation
+                        </a>
+                    </p>
+
+                    <div class="content content--full">
+                        <p>
+                            The jQuery function creates a new jQuery object.
+                        </p>
+                        <p>
+                            jQuery function:
+                        </p>
+                        <pre><code>jQuery()</pre></code>
+                        <p>
+                            jQuery function shorthand:
+                        </p>
+                        <pre><code>$()</pre></code>
+                        <p>
+                            You can use any CSS selector as a parameter inside of the jQuery function and it will find
+                            the matching element and return it as a jQuery object. 
+                        </p>
+
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Example
+                                </h3>
+                                <p>
+                                    The following selects every element with the class of active and return a jQuery object for the selection:
+                                </p>
+                                <pre><code>$('.active')</pre></code>
+                                <p>
+                                    Look at the console window for the logged result.
+                                </p>
+                                <div class="practiceClass">
+                                    <p>.practiceClass</p>
+                                </div>
+                                <div class="practiceClass active">
+                                    <p>.practiceClass .active</p>
+                                </div>
+                                <div class="practiceClass">
+                                    <p>.practiceClass</p>
+                                </div>
+                                <div class="practiceClass active">
+                                    <p>.practiceClass .active</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>  
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/jquery-set-up/jquery-function.js"></script>
+</body>
+
+</html>

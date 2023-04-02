@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stith Module 4: Lab 1</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>jQuery Events</h1>
+                    <p>
+                        Due to the fact that jQuery objects are not HTMLElement objects, they will have different members (properties and methods). This means that methods such as .addEventListener will not work on jQuery objects. We can still add events to elements selected via jQuery using the .on method. 
+                    </p>
+
+
+                    <div class="content">
+                        <h2>.on() method</h2>
+                        <p>
+                            The on method is to a jQuery object as the addEventListener method is to the HTMLElement object. Much like the addEventListener method, on expects an argument for the type of event as well as an argument for the function that will be executed when the event is triggered.  
+                        </p>
+<pre><code>$('#myButton').on("click", function(e){
+    console.log(this);    
+});  
+</pre></code>
+<input type="button" id="myButton" value="#myButton">
+                        <div class="content-split">
+                            <div class="full">
+                                <h3>
+                                    Practice
+                                </h3>
+                                <p>
+                                    Create a button and make it alert text of your choice upon click. Use the jQuery on() method to do this. 
+                                </p>
+                                <input id="testBtn" type="button" value="CLICK ME!">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </main>
+        <footer>
+    </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>  
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/jquery-events.js"></script>
+</body>
+</html>

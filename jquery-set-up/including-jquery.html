@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Including Jquery</title>
+    <link rel="stylesheet" href="/src/css/main.css">
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+          
+        </nav>
+        <header>
+
+        </header>
+        <main>
+            <div class="nav-spacer">
+                /* Do not add content--this is only for spacing the nav bar */
+            </div>
+            <div class="main-container">
+                <div class="container">
+                    <h1>Including jQuery</h1>
+                    <p><a href="https://learn.jquery.com/using-jquery-core/document-ready/" target="_blank">Documentation</a></p>
+                    <p>
+                        jQuery is a JavaScript library. A library is a collection of code that has already been created to provide additional functionality. jQuery is not natively included in JavaScript, meaning that it needs to be added to our projects. We can download the library (.js files) or we can include a link to a Content Delivery Network that has the files on their server.                     
+                    </p>
+                    <p>
+                        CDNs offer a way to serve content to a user without having to host the content on your site. CDNs are often a faster and more reliable way to load content making them a good alternative to hosting content on your site. 
+                    </p>
+                    <p>
+                        jQuery is hosted on <a href="https://developers.google.com/speed/libraries">several CDNs</a>. Here are a couple:
+                    </p>
+                    <br />
+                    <br />
+                    <h3>Google CDN</h3>
+<pre><code>&#x3C;script src=&#x22;https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;  
+</pre></code>
+                    <h3>jQuery CDN</h3>
+<pre><code>&#x3C;script src=&#x22;https://code.jquery.com/jquery-3.6.3.min.js&#x22; 
+    integrity=&#x22;sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=&#x22; crossorigin=&#x22;anonymous&#x22;&#x3E;&#x3C;/script&#x3E;
+</pre></code>
+                    
+                    <p>
+                        Try adding the Google CDN link to this HTML page. You will need to do this on each page you want to use jQuery. Remember that scripts load from top to bottom meaning that you should load jQuery before you use it. 
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> 
+    <script src="/src/js/menu.js"></script>
+    <script src="/src/js/main.js"></script>
+</body>
+</html>
